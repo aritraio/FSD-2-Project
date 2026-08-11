@@ -9,14 +9,14 @@
 
 ## Phase 0 — Project Scaffolding
 
-- [ ] Initialize Vite + React project (`npx create-vite`)
-- [ ] Install core dependencies:
+- [x] Initialize Vite + React project (`npx create-vite`)
+- [x] Install core dependencies:
   - `react-router-dom`
   - `recharts`
   - `lucide-react`
   - `date-fns`
-- [ ] Install & configure Tailwind CSS (v4 or v3 — confirm version)
-- [ ] Set up folder structure:
+- [x] Install & configure Tailwind CSS (v4 or v3 — confirm version)
+- [x] Set up folder structure:
   ```
   src/
     components/
@@ -32,11 +32,11 @@
     utils/
     services/
   ```
-- [ ] Add Google Fonts: **Playfair Display** (or DM Serif Display) + **Inter** (or Geist)
-- [ ] Create Tailwind theme extension (color tokens, font families, spacing scale)
-- [ ] Configure path aliases (`@/` → `src/`) in `vite.config.js`
-- [ ] Write a basic `README.md`
-- [ ] Verify `npm install && npm run dev` works with a blank page
+- [x] Add Google Fonts: **Playfair Display** (or DM Serif Display) + **Inter** (or Geist)
+- [x] Create Tailwind theme extension (color tokens, font families, spacing scale)
+- [x] Configure path aliases (`@/` → `src/`) in `vite.config.js`
+- [x] Write a basic `README.md`
+- [x] Verify `npm install && npm run dev` works with a blank page
 
 ---
 

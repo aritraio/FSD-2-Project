@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-ivory text-zinc-900 font-sans antialiased min-h-screen;
+  }
+}
+
+@layer utilities {
+  .font-serif-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  
+  .display-xl {
+    @apply font-serif-display text-4xl sm:text-5xl lg:text-6xl tracking-tight font-semibold;
+  }
+
+  .heading-lg {
+    @apply font-serif-display text-2xl sm:text-3xl tracking-tight font-medium;
+  }
+
+  .heading-sm {
+    @apply font-sans text-lg font-semibold tracking-tight;
+  }
+
+  .label-uppercase {
+    @apply font-sans text-xs font-semibold uppercase tracking-widest text-zinc-500;
+  }
+
+  .mono-val {
+    font-variant-numeric: tabular-nums;
+  }
+}
