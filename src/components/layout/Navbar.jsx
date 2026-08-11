@@ -16,6 +16,7 @@ import {
   Moon,
   Sun,
 } from 'lucide-react';
+import MobileNav from './MobileNav';
 
 const NAV_ITEMS = [
   { to: '/', label: 'Dashboard', icon: LayoutDashboard },
@@ -78,8 +79,10 @@ export default function Navbar({ onSearchClick }) {
       <div className="max-w-[1400px] mx-auto px-6">
         <div className="flex items-center justify-between h-16">
 
-          {/* ── Left: Logo ── */}
-          <NavLink
+          {/* ── Left: Mobile Hamburger + Logo ── */}
+          <div className="flex items-center gap-2">
+            <MobileNav />
+            <NavLink
             to="/"
             className="flex items-center gap-2.5 shrink-0 group"
             aria-label="Ledger — Go to dashboard"
@@ -97,6 +100,7 @@ export default function Navbar({ onSearchClick }) {
               Ledger
             </span>
           </NavLink>
+          </div>
 
           {/* ── Center: Navigation Links ── */}
           <div className="hidden lg:flex items-center gap-1">
