@@ -118,43 +118,43 @@
 
 ### 3.1 Mock Data (`data/mockData.js`)
 
-- [ ] Generate 50–80 realistic transactions spanning 6+ months
+- [x] Generate 50–80 realistic transactions spanning 6+ months
   - Indian merchants: Amazon, Swiggy, Zomato, Uber, Blinkit, Netflix, Spotify, Flipkart, Airtel, Jio, Myntra
   - Categories: Food, Transport, Shopping, Bills, Entertainment, Education, Healthcare, Travel, Salary, Investment, Other
   - Realistic INR amounts
   - Mix of income (salary, freelance) and expenses
-- [ ] Define 5 accounts: HDFC Savings, ICICI Savings, SBI Credit Card, Amazon Pay ICICI, Cash
-- [ ] Define 5–6 default budget categories with limits
-- [ ] Define investment holdings: Stocks, Mutual Funds, Gold (with units, avg price, current price)
-- [ ] Generate 6–12 months of historical net-worth data points
+- [x] Define 5 accounts: HDFC Savings, ICICI Savings, SBI Credit Card, Amazon Pay ICICI, Cash
+- [x] Define 5–6 default budget categories with limits
+- [x] Define investment holdings: Stocks, Mutual Funds, Gold (with units, avg price, current price)
+- [x] Generate 6–12 months of historical net-worth data points
 
 ### 3.2 Storage Service (`services/storage.js`)
 
-- [ ] Abstract CRUD layer over `localStorage`
+- [x] Abstract CRUD layer over `localStorage`
   - `getTransactions()`, `saveTransaction()`, `updateTransaction()`, `deleteTransaction()`
   - `getAccounts()`, `saveAccount()`, `updateAccount()`
   - `getBudgets()`, `saveBudget()`, `updateBudget()`, `deleteBudget()`
   - `getInvestments()`, `saveInvestment()`
   - `getSettings()`, `saveSettings()`
-- [ ] Seed with mock data on first load (check flag `ledger_initialized`)
-- [ ] `exportAllData()` → returns JSON blob
-- [ ] `importData(json)` → validates & overwrites
-- [ ] `clearAllData()` → wipes localStorage keys
+- [x] Seed with mock data on first load (check flag `ledger_initialized`)
+- [x] `exportAllData()` → returns JSON blob
+- [x] `importData(json)` → validates & overwrites
+- [x] `clearAllData()` → wipes localStorage keys
 
 ### 3.3 Utility Functions
 
-- [ ] `formatCurrency.js`
+- [x] `formatCurrency.js`
   - `formatINR(amount)` → `₹1,42,500`
   - `formatCompact(amount)` → `₹8.42L`
   - `formatPercent(value)` → `+4.31%`
   - `formatChange(amount)` → `+₹34,820` / `−₹2,499`
-- [ ] `dateUtils.js`
+- [x] `dateUtils.js`
   - `formatDate(date)` → `Aug 10`
   - `getMonthYear(date)` → `August 2026`
   - `getMonthRange(date)` → start/end of month
   - `getLastNMonths(n)` → array of month labels
   - `isThisMonth(date)` / `isLastMonth(date)`
-- [ ] `calculations.js`
+- [x] `calculations.js`
   - `calcTotalAssets(accounts)`
   - `calcTotalLiabilities(accounts)`
   - `calcNetWorth(accounts)`
