@@ -176,81 +176,81 @@
 
 ### 4.1 Hero / Greeting Section
 
-- [ ] Breadcrumb: `OVERVIEW / AUGUST 2026`
-- [ ] Greeting: `GOOD MORNING, ARITRA`
-- [ ] Subtitle: `YOUR FINANCIAL OVERVIEW`
-- [ ] Large net-worth number: `₹8,42,350`
-- [ ] Label: `NET WORTH`
-- [ ] Monthly change: `+₹34,820 this month` / `+4.31%` with upward arrow
-- [ ] All values computed from data, not hardcoded
+- [x] Breadcrumb: `OVERVIEW / AUGUST 2026`
+- [x] Greeting: `GOOD MORNING, ARITRA`
+- [x] Subtitle: `YOUR FINANCIAL OVERVIEW`
+- [x] Large net-worth number: `₹8,42,350`
+- [x] Label: `NET WORTH`
+- [x] Monthly change: `+₹34,820 this month` / `+4.31%` with upward arrow
+- [x] All values computed from data, not hardcoded
 
 ### 4.2 Financial Metrics Strip (`FinancialMetrics.jsx`)
 
-- [ ] Five metric blocks (horizontal row, responsive wrap):
+- [x] Five metric blocks (horizontal row, responsive wrap):
   1. NET WORTH — amount + % change
   2. INCOME — amount + "This month"
   3. EXPENSES — amount + "This month"
   4. SAVINGS — amount + savings rate %
   5. INVESTMENTS — amount + YTD return %
-- [ ] Clean borderless blocks, thin separators or spacing
-- [ ] Color-code changes: green positive, red negative
+- [x] Clean borderless blocks, thin separators or spacing
+- [x] Color-code changes: green positive, red negative
 
 ### 4.3 Net Worth Chart (`NetWorth.jsx`)
 
-- [ ] Section heading: `NET WORTH` / `Last 6 months`
-- [ ] Smooth area/line chart (Recharts `AreaChart`)
-- [ ] Time-range toggles: 1M, 3M, 6M, 1Y, ALL
-- [ ] Minimal grid lines, elegant tooltip
-- [ ] Data derived from historical calculations
+- [x] Section heading: `NET WORTH` / `Last 6 months`
+- [x] Smooth area/line chart (Recharts `AreaChart`)
+- [x] Time-range toggles: 1M, 3M, 6M, 1Y, ALL
+- [x] Minimal grid lines, elegant tooltip
+- [x] Data derived from historical calculations
 
 ### 4.4 Cash Flow Chart (`CashFlowChart.jsx`)
 
-- [ ] Two-line chart: income vs. expenses over recent months
-- [ ] Summary cards: INCOME, EXPENSES, NET CASH FLOW
-- [ ] Subtle contrasting colors (amber for income, slate for expenses)
+- [x] Two-line chart: income vs. expenses over recent months
+- [x] Summary cards: INCOME, EXPENSES, NET CASH FLOW
+- [x] Subtle contrasting colors (amber for income, slate for expenses)
 
 ### 4.5 Spending Breakdown (`SpendingBreakdown.jsx`)
 
-- [ ] Donut chart (Recharts `PieChart`) of category spending
-- [ ] Category list alongside:
+- [x] Donut chart (Recharts `PieChart`) of category spending
+- [x] Category list alongside:
   - Color indicator dot
   - Category name
   - Percentage
   - Amount
-- [ ] Data computed from current-month transactions
+- [x] Data computed from current-month transactions
 
 ### 4.6 Recent Transactions (`RecentTransactions.jsx`)
 
-- [ ] List of 5–8 latest transactions
-- [ ] Each row: merchant, category, date, account, amount
-- [ ] Green for income, dark/muted-red for expenses
-- [ ] `VIEW ALL TRANSACTIONS →` link to `/transactions`
+- [x] List of 5–8 latest transactions
+- [x] Each row: merchant, category, date, account, amount
+- [x] Green for income, dark/muted-red for expenses
+- [x] `VIEW ALL TRANSACTIONS →` link to `/transactions`
 
 ### 4.7 Account Overview (`AccountOverview.jsx`)
 
-- [ ] Split into ASSETS and LIABILITIES
-- [ ] Each account: name, type icon, balance, last updated
-- [ ] Net worth summary at bottom
-- [ ] Link to `/accounts`
+- [x] Split into ASSETS and LIABILITIES
+- [x] Each account: name, type icon, balance, last updated
+- [x] Net worth summary at bottom
+- [x] Link to `/accounts`
 
 ### 4.8 Financial Insights (`FinancialInsights.jsx`)
 
-- [ ] Auto-generate 3–5 insights from data:
+- [x] Auto-generate 3–5 insights from data:
   - Month-over-month spending comparison by category
   - Savings rate
   - Top spending category share
   - Net-worth change
-- [ ] Factual, concise, no "financial advice"
-- [ ] Small insight cards or inline list
+- [x] Factual, concise, no "financial advice"
+- [x] Small insight cards or inline list
 
 ### 4.9 Dashboard Layout & Visual Hierarchy
 
-- [ ] Net worth → most prominent (top, large)
-- [ ] Metrics strip → second row
-- [ ] Net worth chart → large, wide
-- [ ] Cash flow + spending → side-by-side on desktop, stacked on mobile
-- [ ] Recent transactions + accounts + insights → lower sections
-- [ ] Generous whitespace, thin separators, editorial feel
+- [x] Net worth → most prominent (top, large)
+- [x] Metrics strip → second row
+- [x] Net worth chart → large, wide
+- [x] Cash flow + spending → side-by-side on desktop, stacked on mobile
+- [x] Recent transactions + accounts + insights → lower sections
+- [x] Generous whitespace, thin separators, editorial feel
 
 ---
 
