@@ -22,6 +22,7 @@ import {
   Tooltip,
   ConfirmDialog,
 } from '@/components/ui';
+import Navbar from '@/components/layout/Navbar';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -38,6 +39,9 @@ export default function App() {
 
   return (
     <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark bg-surface-dark' : 'bg-ivory'}`}>
+      {/* Desktop Navigation */}
+      <Navbar onSearchClick={() => {}} />
+
       <div className="max-w-5xl mx-auto px-6 py-12 space-y-16">
 
         {/* ── Header ── */}

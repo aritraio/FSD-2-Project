@@ -84,12 +84,12 @@
 
 ### 2.1 Desktop Navigation (`Navbar.jsx`)
 
-- [ ] Logo / product name ("Ledger") — left-aligned
-- [ ] Navigation links: Dashboard, Transactions, Accounts, Analytics, Budgets, Investments, Settings
-- [ ] Small uppercase nav labels, clean spacing
-- [ ] Right side: search icon, notification icon, user avatar/menu
-- [ ] Active link indicator (underline or subtle highlight)
-- [ ] Sticky header
+- [x] Logo / product name ("Ledger") — left-aligned
+- [x] Navigation links: Dashboard, Transactions, Accounts, Analytics, Budgets, Investments, Settings
+- [x] Small uppercase nav labels, clean spacing
+- [x] Right side: search icon, notification icon, user avatar/menu
+- [x] Active link indicator (underline or subtle highlight)
+- [x] Sticky header
 
 ### 2.2 Mobile Navigation (`MobileNav.jsx`)
 
