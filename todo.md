@@ -93,15 +93,15 @@
 
 ### 2.2 Mobile Navigation (`MobileNav.jsx`)
 
-- [ ] Hamburger menu OR bottom tab bar
-- [ ] Slide-out drawer with all navigation links
-- [ ] Proper overlay + close behavior
-- [ ] Accessible focus management
+- [x] Hamburger menu OR bottom tab bar
+- [x] Slide-out drawer with all navigation links
+- [x] Proper overlay + close behavior
+- [x] Accessible focus management
 
 ### 2.3 App Shell
 
-- [ ] Create `AppLayout.jsx` wrapper with Navbar + `<Outlet />`
-- [ ] Set up React Router with all 7 routes:
+- [x] Create `AppLayout.jsx` wrapper with Navbar + `<Outlet />`
+- [x] Set up React Router with all 7 routes:
   - `/` → Dashboard
   - `/transactions` → Transactions
   - `/accounts` → Accounts
@@ -109,8 +109,8 @@
   - `/analytics` → Analytics
   - `/investments` → Investments
   - `/settings` → Settings
-- [ ] Max-width container (~1400px), generous padding
-- [ ] Page transition (optional subtle fade)
+- [x] Max-width container (~1400px), generous padding
+- [x] Page transition (optional subtle fade)
 
 ---
 
