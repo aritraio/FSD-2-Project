@@ -44,7 +44,7 @@
 
 ### 1.1 Color Tokens
 
-- [ ] Define light-mode palette:
+- [x] Define light-mode palette:
   - Primary background: warm off-white / ivory
   - Main text: near-black
   - Secondary text: muted gray
@@ -52,14 +52,14 @@
   - Positive: mint/emerald
   - Negative: muted red
   - Chart palette: teal, gold, deep navy
-- [ ] Define dark-mode palette (deep charcoal, warm off-white text, muted accent colors)
-- [ ] Wire up CSS variables or Tailwind `dark:` classes
+- [x] Define dark-mode palette (deep charcoal, warm off-white text, muted accent colors)
+- [x] Wire up CSS variables or Tailwind `dark:` classes
 
 ### 1.2 Typography Scale
 
-- [ ] Configure heading font (Playfair Display / DM Serif Display)
-- [ ] Configure body/UI font (Inter / Geist)
-- [ ] Define typographic classes:
+- [x] Configure heading font (Playfair Display / DM Serif Display)
+- [x] Configure body/UI font (Inter / Geist)
+- [x] Define typographic classes:
   - `.display-xl` — hero net-worth number
   - `.heading-lg` — section headings
   - `.heading-sm` — card headings
@@ -69,14 +69,14 @@
 
 ### 1.3 Reusable UI Components
 
-- [ ] `Button.jsx` — primary, secondary, ghost, destructive variants; sizes sm/md/lg
-- [ ] `Modal.jsx` — accessible overlay with trap focus, close on Escape, backdrop click
-- [ ] `Input.jsx` — text, number, date inputs; labels, error states
-- [ ] `Select.jsx` — dropdown select with label
-- [ ] `Badge.jsx` — small status/category pill
-- [ ] `EmptyState.jsx` — illustration placeholder + message + CTA
-- [ ] `Tooltip.jsx` — lightweight tooltip (for chart hover, optional)
-- [ ] `ConfirmDialog.jsx` — "Are you sure?" modal for destructive actions
+- [x] `Button.jsx` — primary, secondary, ghost, destructive variants; sizes sm/md/lg
+- [x] `Modal.jsx` — accessible overlay with trap focus, close on Escape, backdrop click
+- [x] `Input.jsx` — text, number, date inputs; labels, error states
+- [x] `Select.jsx` — dropdown select with label
+- [x] `Badge.jsx` — small status/category pill
+- [x] `EmptyState.jsx` — illustration placeholder + message + CTA
+- [x] `Tooltip.jsx` — lightweight tooltip (for chart hover, optional)
+- [x] `ConfirmDialog.jsx` — "Are you sure?" modal for destructive actions
 
 ---
 
