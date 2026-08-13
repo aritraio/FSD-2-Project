@@ -508,15 +508,15 @@
 
 ## Phase 14 — Micro-Interactions & Polish
 
-- [ ] Chart entry animations (fade in, draw line)
-- [ ] Modal open/close transitions (fade + slide)
-- [ ] Button hover/active states
-- [ ] Navigation link hover underline
-- [ ] Row hover highlight in tables
-- [ ] Number formatting transitions (optional count-up)
-- [ ] Skeleton loading states (optional)
-- [ ] Page transitions (subtle fade between routes, optional)
-- [ ] All transitions via CSS `transition` — no heavy animation libraries
+- [x] Chart entry animations (fade in, draw line)
+- [x] Modal open/close transitions (fade + slide)
+- [x] Button hover/active states
+- [x] Navigation link hover underline
+- [x] Row hover highlight in tables
+- [x] Number formatting transitions (optional count-up)
+- [x] Skeleton loading states (optional)
+- [x] Page transitions (subtle fade between routes, optional)
+- [x] All transitions via CSS `transition` — no heavy animation libraries
 
 ---
 

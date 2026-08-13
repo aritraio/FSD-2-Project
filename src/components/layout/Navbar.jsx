@@ -127,14 +127,21 @@ export default function Navbar({ onSearchClick }) {
                   ${
                     isActive
                       ? 'text-brand-amber dark:text-amber-400'
-                      : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-text-dark-primary hover:bg-ivory-muted dark:hover:bg-surface-dark-elevated'
+                      : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-text-dark-primary hover:bg-ivory-muted dark:hover:bg-surface-dark-elevated group'
                   }
                 `}
               >
                 <Icon className="w-3.5 h-3.5" />
                 <span>{label}</span>
-                {/* Active indicator — bottom bar */}
-                {({ isActive }) => null}
+                {/* Hover/Active indicator — bottom bar */}
+                {({ isActive }) => (
+                  <span
+                    className={`
+                      absolute bottom-0 left-1/2 -translate-x-1/2 h-[2px] rounded-sm bg-current transition-all duration-200
+                      ${isActive ? 'w-4 opacity-100' : 'w-0 opacity-0 group-hover:w-4 group-hover:opacity-100'}
+                    `}
+                  />
+                )}
               </NavLink>
             ))}
           </div>
@@ -274,20 +281,7 @@ export default function Navbar({ onSearchClick }) {
         </div>
       </div>
 
-      {/* Active link bottom border — rendered via CSS on the active NavLink */}
-      <style>{`
-        nav a[aria-current="page"]::after {
-          content: '';
-          position: absolute;
-          bottom: -1px;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 16px;
-          height: 2px;
-          background: currentColor;
-          border-radius: 1px;
-        }
-      `}</style>
+      {/* Removed the global style for nav links since we now use a component-level span */}
     </nav>
   );
 }

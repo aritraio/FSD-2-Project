@@ -4,6 +4,7 @@ import { getSettings } from '@/services/storage';
 import { formatINR, formatPercent, formatChange } from '@/utils/formatCurrency';
 import { getMonthYear } from '@/utils/dateUtils';
 import { format } from 'date-fns';
+import { useCountUp } from '@/utils/useCountUp';
 
 /**
  * Get a time-of-day greeting string.
@@ -74,7 +75,7 @@ export default function HeroSection({ netWorth = 0, prevNetWorth = 0 }) {
         <div>
           <p className="label mb-2">Net Worth</p>
           <h1 className="display-xl text-zinc-900 dark:text-text-dark-primary">
-            {formatINR(netWorth)}
+            {formatINR(useCountUp(netWorth, 1200))}
           </h1>
         </div>
 
