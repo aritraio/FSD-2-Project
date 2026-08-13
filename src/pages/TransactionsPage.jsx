@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Plus } from 'lucide-react';
 import Button from '../components/ui/Button';
 import TransactionFilters from '../components/transactions/TransactionFilters';
@@ -35,13 +36,16 @@ export default function TransactionsPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingTransaction, setEditingTransaction] = useState(null);
 
+  const location = useLocation();
+  const initialAccountId = location.state?.accountId || 'all';
+
   // Filters State
   const [filters, setFilters] = useState({
     search: '',
     month: 'all',
     type: 'all',
     category: 'all',
-    accountId: 'all',
+    accountId: initialAccountId,
   });
 
   // Load initial data
