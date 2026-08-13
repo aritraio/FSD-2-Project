@@ -112,7 +112,7 @@ export default function PortfolioValueChart({ totalCurrent = 0 }) {
                 r: 5,
                 strokeWidth: 2,
                 stroke: '#7C3AED',
-                fill: '#fff',
+                fill: 'var(--color-bg-secondary)',
               }}
             />
           </AreaChart>

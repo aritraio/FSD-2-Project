@@ -138,7 +138,7 @@ export default function NetWorthChart({ data = [] }) {
                 r: 5,
                 strokeWidth: 2,
                 stroke: '#D97706',
-                fill: '#fff',
+                fill: 'var(--color-bg-secondary)',
               }}
             />
           </AreaChart>

@@ -17,6 +17,7 @@ import {
   Sun,
 } from 'lucide-react';
 import MobileNav from './MobileNav';
+import { useTheme } from '../ThemeProvider';
 
 const NAV_ITEMS = [
   { to: '/', label: 'Dashboard', icon: LayoutDashboard },
@@ -45,6 +46,15 @@ export default function Navbar({ onSearchClick }) {
   const location = useLocation();
   const [userMenuOpen, setUserMenuOpen] = useState(false);
   const userMenuRef = useRef(null);
+  const { theme, preference, setPreference } = useTheme();
+
+  // Cycle: light → dark → system → light …
+  const cycleTheme = () => {
+    const next = preference === 'light' ? 'dark' : preference === 'dark' ? 'system' : 'light';
+    setPreference(next);
+  };
+
+  const themeLabel = preference === 'system' ? `System (${theme})` : preference === 'dark' ? 'Dark' : 'Light';
 
   // Close user menu on outside click
   useEffect(() => {
@@ -131,6 +141,27 @@ export default function Navbar({ onSearchClick }) {
 
           {/* ── Right: Actions ── */}
           <div className="flex items-center gap-1">
+            {/* Theme Toggle */}
+            <button
+              onClick={cycleTheme}
+              className="
+                relative p-2.5 rounded-lg
+                text-zinc-500 dark:text-zinc-400
+                hover:text-zinc-900 dark:hover:text-text-dark-primary
+                hover:bg-ivory-muted dark:hover:bg-surface-dark-elevated
+                transition-colors duration-150
+                group
+              "
+              aria-label={`Toggle theme (current: ${themeLabel})`}
+              title={`Theme: ${themeLabel}`}
+            >
+              {theme === 'dark' ? (
+                <Moon className="w-[18px] h-[18px]" />
+              ) : (
+                <Sun className="w-[18px] h-[18px]" />
+              )}
+            </button>
+
             {/* Search */}
             <button
               onClick={onSearchClick}
