@@ -430,24 +430,24 @@
 
 ### 10.1 Profile Section
 
-- [ ] Display name input
-- [ ] (Optional) avatar placeholder
+- [x] Display name input
+- [x] (Optional) avatar placeholder
 
 ### 10.2 Preferences
 
-- [ ] Currency display (default INR, could add USD/EUR)
-- [ ] Theme toggle: Light / Dark / System
-- [ ] Default transaction category
+- [x] Currency display (default INR, could add USD/EUR)
+- [x] Theme toggle: Light / Dark / System
+- [x] Default transaction category
 
 ### 10.3 Data Management
 
-- [ ] **Export Data** button → downloads JSON file of all transactions, accounts, budgets, investments
-- [ ] **Import Data** button → file upload, validate JSON, merge or overwrite
-- [ ] **Clear All Data** button → confirmation modal → wipes localStorage + resets to empty state
+- [x] **Export Data** button → downloads JSON file of all transactions, accounts, budgets, investments
+- [x] **Import Data** button → file upload, validate JSON, merge or overwrite
+- [x] **Clear All Data** button → confirmation modal → wipes localStorage + resets to empty state
 
 ### 10.4 About
 
-- [ ] App name, version, credits (optional)
+- [x] App name, version, credits (optional)
 
 ---
 
