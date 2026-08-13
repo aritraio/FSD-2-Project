@@ -101,6 +101,7 @@ export default function GlobalSearch({ isOpen, onClose }) {
                 setQuery('');
                 setTimeout(() => inputRef.current?.focus(), 10);
               }}
+              aria-label="Clear search"
               className="p-1.5 rounded-md text-zinc-400 hover:text-zinc-600 hover:bg-zinc-100 dark:hover:text-zinc-300 dark:hover:bg-surface-dark-elevated transition-colors"
             >
               <X className="w-5 h-5" />

@@ -522,15 +522,15 @@
 
 ## Phase 15 — Accessibility
 
-- [ ] Semantic HTML: `<nav>`, `<main>`, `<section>`, `<article>`, `<table>`, `<form>`
-- [ ] Single `<h1>` per page, proper heading hierarchy
-- [ ] All interactive elements keyboard-accessible
-- [ ] Visible focus rings (styled to match design)
-- [ ] `aria-label` on icon-only buttons
-- [ ] `aria-modal`, `aria-labelledby` on modals
-- [ ] Form labels associated with inputs
-- [ ] Sufficient color contrast (WCAG AA)
-- [ ] Screen-reader-friendly chart descriptions (optional `aria-label` or `<desc>`)
+- [x] Semantic HTML: `<nav>`, `<main>`, `<section>`, `<article>`, `<table>`, `<form>`
+- [x] Single `<h1>` per page, proper heading hierarchy
+- [x] All interactive elements keyboard-accessible
+- [x] Visible focus rings (styled to match design)
+- [x] `aria-label` on icon-only buttons
+- [x] `aria-modal`, `aria-labelledby` on modals
+- [x] Form labels associated with inputs
+- [x] Sufficient color contrast (WCAG AA)
+- [x] Screen-reader-friendly chart descriptions (optional `aria-label` or `<desc>`)
 
 ---
 
