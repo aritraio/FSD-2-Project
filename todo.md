@@ -317,20 +317,20 @@
 
 ### 6.1 Accounts Overview
 
-- [ ] Page heading: `ACCOUNTS`
-- [ ] Summary: Total Assets, Total Liabilities, Net Worth
+- [x] Page heading: `ACCOUNTS`
+- [x] Summary: Total Assets, Total Liabilities, Net Worth
 
 ### 6.2 Account Cards
 
-- [ ] Group by type: Bank Accounts, Credit Cards, Cash
-- [ ] Each card: name, type, balance, icon
-- [ ] Visual separation of assets vs. liabilities
-- [ ] Click to view account detail / transaction history for that account
+- [x] Group by type: Bank Accounts, Credit Cards, Cash
+- [x] Each card: name, type, balance, icon
+- [x] Visual separation of assets vs. liabilities
+- [x] Click to view account detail / transaction history for that account
 
 ### 6.3 Add/Edit Account
 
-- [ ] Modal with fields: Name, Type (Savings/Current/Credit Card/Cash/Investment), Opening Balance
-- [ ] Persist to localStorage
+- [x] Modal with fields: Name, Type (Savings/Current/Credit Card/Cash/Investment), Opening Balance
+- [x] Persist to localStorage
 
 ---
 
