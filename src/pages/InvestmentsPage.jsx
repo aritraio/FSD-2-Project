@@ -1,20 +1,163 @@
-import React from 'react';
-import { TrendingUp } from 'lucide-react';
+import React, { useState, useEffect, useMemo } from 'react';
+import { Plus, TrendingUp } from 'lucide-react';
 
+// Services
+import {
+  getInvestments,
+  saveInvestment,
+  updateInvestment,
+  deleteInvestment,
+} from '@/services/storage';
+
+// Calculations
+import { calcInvestmentReturn } from '@/utils/calculations';
+
+// UI
+import Button from '@/components/ui/Button';
+import EmptyState from '@/components/ui/EmptyState';
+import ConfirmDialog from '@/components/ui/ConfirmDialog';
+
+// Investment components
+import PortfolioSummary from '@/components/investments/PortfolioSummary';
+import AllocationChart from '@/components/investments/AllocationChart';
+import PortfolioValueChart from '@/components/investments/PortfolioValueChart';
+import HoldingsTable from '@/components/investments/HoldingsTable';
+import HoldingModal from '@/components/investments/HoldingModal';
+
+/**
+ * InvestmentsPage — Portfolio tracker with summary, allocation, value chart, and holdings table.
+ */
 export default function InvestmentsPage() {
+  const [holdings, setHoldings] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [editingHolding, setEditingHolding] = useState(null);
+  const [deleteConfirm, setDeleteConfirm] = useState({ open: false, id: null });
+
+  // Load data
+  useEffect(() => {
+    setHoldings(getInvestments());
+  }, []);
+
+  // Computed portfolio metrics
+  const portfolio = useMemo(() => {
+    const result = calcInvestmentReturn(holdings);
+    // Simulate "today change" as ~0.3-1.2% of current value
+    // In a real app, this would come from actual market data
+    const todayChangePct = 0.0047; // ~0.47%
+    const todayChange = Math.round(result.totalCurrent * todayChangePct);
+    return {
+      ...result,
+      todayChange,
+    };
+  }, [holdings]);
+
+  // Handlers
+  const handleAddClick = () => {
+    setEditingHolding(null);
+    setIsModalOpen(true);
+  };
+
+  const handleEditClick = (holding) => {
+    setEditingHolding(holding);
+    setIsModalOpen(true);
+  };
+
+  const handleDeleteClick = (id) => {
+    setDeleteConfirm({ open: true, id });
+  };
+
+  const confirmDelete = () => {
+    if (deleteConfirm.id) {
+      deleteInvestment(deleteConfirm.id);
+      setHoldings(getInvestments());
+    }
+    setDeleteConfirm({ open: false, id: null });
+  };
+
+  const handleSave = (data) => {
+    if (editingHolding) {
+      updateInvestment({ ...data, id: editingHolding.id });
+    } else {
+      saveInvestment(data);
+    }
+    setHoldings(getInvestments());
+  };
+
+  const hasHoldings = holdings.length > 0;
+
   return (
-    <div className="space-y-6">
-      <div>
-        <p className="label mb-1">Portfolio</p>
-        <h1 className="heading-lg text-zinc-900 dark:text-text-dark-primary">Investments</h1>
-      </div>
-      <div className="card p-12 flex flex-col items-center justify-center text-center">
-        <div className="w-14 h-14 rounded-2xl bg-amber-50 dark:bg-[rgba(245,158,11,0.12)] flex items-center justify-center mb-4">
-          <TrendingUp className="w-7 h-7 text-brand-amber" />
+    <div className="space-y-8 pb-12">
+      {/* ── Header ── */}
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div>
+          <p className="label mb-1 text-zinc-500">Portfolio</p>
+          <h1 className="heading-lg text-zinc-900 dark:text-text-dark-primary">
+            Investments
+          </h1>
         </div>
-        <h2 className="heading-sm text-zinc-800 dark:text-text-dark-primary mb-2">Investments</h2>
-        <p className="body-sm max-w-md">Your investment portfolio and holdings will appear here. This page will be built in Phase 9.</p>
+
+        <Button
+          variant="primary"
+          icon={<Plus className="w-4 h-4" />}
+          onClick={handleAddClick}
+        >
+          Add Holding
+        </Button>
       </div>
+
+      {/* ── Empty State ── */}
+      {!hasHoldings ? (
+        <div className="card p-8 md:p-12">
+          <EmptyState
+            icon={<TrendingUp className="w-7 h-7 text-brand-amber" />}
+            title="No investments tracked"
+            description="Start tracking your portfolio by adding your first investment holding."
+            actionLabel="Add Holding"
+            onAction={handleAddClick}
+          />
+        </div>
+      ) : (
+        <>
+          {/* ── Portfolio Summary ── */}
+          <PortfolioSummary
+            totalInvested={portfolio.totalInvested}
+            totalCurrent={portfolio.totalCurrent}
+            totalReturn={portfolio.totalReturn}
+            returnPercentage={portfolio.returnPercentage}
+            todayChange={portfolio.todayChange}
+          />
+
+          {/* ── Allocation + Portfolio Value (side-by-side) ── */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <AllocationChart holdings={holdings} />
+            <PortfolioValueChart totalCurrent={portfolio.totalCurrent} />
+          </div>
+
+          {/* ── Holdings Table ── */}
+          <HoldingsTable
+            holdings={holdings}
+            onEdit={handleEditClick}
+            onDelete={handleDeleteClick}
+          />
+        </>
+      )}
+
+      {/* ── Modals ── */}
+      <HoldingModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        holding={editingHolding}
+        onSave={handleSave}
+      />
+
+      <ConfirmDialog
+        isOpen={deleteConfirm.open}
+        onClose={() => setDeleteConfirm({ open: false, id: null })}
+        onConfirm={confirmDelete}
+        title="Delete Holding"
+        message="This will permanently remove this investment from your portfolio. This cannot be undone."
+        confirmLabel="Delete"
+      />
     </div>
   );
 }

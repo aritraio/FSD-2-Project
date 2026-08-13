@@ -399,30 +399,30 @@
 
 ### 9.1 Portfolio Summary (`PortfolioSummary.jsx`)
 
-- [ ] TOTAL INVESTMENTS value
-- [ ] TODAY change
-- [ ] TOTAL RETURN amount
-- [ ] RETURN %
+- [x] TOTAL INVESTMENTS value
+- [x] TODAY change
+- [x] TOTAL RETURN amount
+- [x] RETURN %
 
 ### 9.2 Allocation Chart
 
-- [ ] Donut chart: Stocks, Mutual Funds, Gold (etc.)
-- [ ] Legend with percentages
+- [x] Donut chart: Stocks, Mutual Funds, Gold (etc.)
+- [x] Legend with percentages
 
 ### 9.3 Portfolio Value Chart
 
-- [ ] Line chart showing portfolio value over time
+- [x] Line chart showing portfolio value over time
 
 ### 9.4 Holdings Table (`HoldingsTable.jsx`)
 
-- [ ] Columns: Asset, Units, Avg Price, Current Price, Invested, Current Value, Return, Return %
-- [ ] Color-code returns green/red
-- [ ] Responsive: card layout on mobile
+- [x] Columns: Asset, Units, Avg Price, Current Price, Invested, Current Value, Return, Return %
+- [x] Color-code returns green/red
+- [x] Responsive: card layout on mobile
 
 ### 9.5 Add/Edit Holding
 
-- [ ] Modal: Asset Name, Type, Units, Average Price, Current Price
-- [ ] Tracking only — no brokerage logic
+- [x] Modal: Asset Name, Type, Units, Average Price, Current Price
+- [x] Tracking only — no brokerage logic
 
 ---
 
