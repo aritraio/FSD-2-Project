@@ -338,29 +338,29 @@
 
 ### 7.1 Budget Overview
 
-- [ ] Month selector: `AUGUST 2026`
-- [ ] Summary: TOTAL BUDGET, SPENT, REMAINING
-- [ ] All calculated from budget limits + transaction data
+- [x] Month selector: `AUGUST 2026`
+- [x] Summary: TOTAL BUDGET, SPENT, REMAINING
+- [x] All calculated from budget limits + transaction data
 
 ### 7.2 Budget Category Cards (`BudgetCard.jsx`)
 
-- [ ] Each card:
+- [x] Each card:
   - Category name
   - Progress bar (`BudgetProgress.jsx`)
   - Spent / Limit
   - Percentage used
-- [ ] Warning state when spent > 80% of limit
-- [ ] Over-budget state (red) when spent > limit
+- [x] Warning state when spent > 80% of limit
+- [x] Over-budget state (red) when spent > limit
 
 ### 7.3 Create/Edit Budget
 
-- [ ] Modal: Category, Monthly Limit
-- [ ] Delete budget option
-- [ ] Persist to localStorage
+- [x] Modal: Category, Monthly Limit
+- [x] Delete budget option
+- [x] Persist to localStorage
 
 ### 7.4 Empty State
 
-- [ ] Message + `CREATE BUDGET` CTA
+- [x] Message + `CREATE BUDGET` CTA
 
 ---
 
