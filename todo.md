@@ -453,19 +453,19 @@
 
 ## Phase 11 — Dark Mode
 
-- [ ] Implement theme context/provider
-- [ ] Toggle in settings + navbar (optional moon/sun icon)
-- [ ] Persist preference in localStorage
-- [ ] Respect `prefers-color-scheme` for "System" option
-- [ ] Dark palette:
+- [x] Implement theme context/provider
+- [x] Toggle in settings + navbar (optional moon/sun icon)
+- [x] Persist preference in localStorage
+- [x] Respect `prefers-color-scheme` for "System" option
+- [x] Dark palette:
   - Background: deep charcoal (`#1a1a1a` / `#0f0f0f`)
   - Text: warm off-white
   - Secondary text: muted gray
   - Accent: amber (same)
   - Positive: muted emerald
   - Cards/surfaces: slightly lighter charcoal
-- [ ] Verify chart readability in dark mode
-- [ ] Verify all form elements, modals, tooltips in dark mode
+- [x] Verify chart readability in dark mode
+- [x] Verify all form elements, modals, tooltips in dark mode
 
 ---
 
