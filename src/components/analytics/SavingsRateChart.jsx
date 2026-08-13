@@ -107,7 +107,7 @@ export default function SavingsRateChart({ transactions = [], months = [] }) {
                 r: 5,
                 strokeWidth: 2,
                 stroke: '#059669',
-                fill: '#fff',
+                fill: 'var(--color-bg-secondary)',
               }}
             />
           </LineChart>

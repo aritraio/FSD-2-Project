@@ -99,7 +99,7 @@ export default function NetWorthGrowthChart({ data = [] }) {
                 r: 5,
                 strokeWidth: 2,
                 stroke: '#0D9488',
-                fill: '#fff',
+                fill: 'var(--color-bg-secondary)',
               }}
             />
           </AreaChart>
