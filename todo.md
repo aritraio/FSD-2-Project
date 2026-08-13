@@ -368,30 +368,30 @@
 
 ### 8.1 Analytics Header
 
-- [ ] Page heading: `ANALYTICS`
-- [ ] Date range filters (month/quarter/year)
+- [x] Page heading: `ANALYTICS`
+- [x] Date range filters (month/quarter/year)
 
 ### 8.2 Summary Metrics
 
-- [ ] Monthly Spending
-- [ ] Monthly Income
-- [ ] Savings Rate
-- [ ] Net Cash Flow
-- [ ] Average Daily Spending
-- [ ] Top Spending Category
+- [x] Monthly Spending
+- [x] Monthly Income
+- [x] Savings Rate
+- [x] Net Cash Flow
+- [x] Average Daily Spending
+- [x] Top Spending Category
 
 ### 8.3 Charts
 
-- [ ] Monthly expenses bar chart (last 6–12 months)
-- [ ] Monthly income bar chart
-- [ ] Category spending comparison (grouped bar or stacked)
-- [ ] Savings rate line chart over time
-- [ ] Net worth growth line chart
-- [ ] All charts minimal, consistent styling with dashboard charts
+- [x] Monthly expenses bar chart (last 6–12 months)
+- [x] Monthly income bar chart
+- [x] Category spending comparison (grouped bar or stacked)
+- [x] Savings rate line chart over time
+- [x] Net worth growth line chart
+- [x] All charts minimal, consistent styling with dashboard charts
 
 ### 8.4 Empty State
 
-- [ ] Message prompting user to add transactions for analytics
+- [x] Message prompting user to add transactions for analytics
 
 ---
 
