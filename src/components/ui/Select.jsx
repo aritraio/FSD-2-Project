@@ -45,7 +45,7 @@ const Select = forwardRef(function Select(
             w-full px-3.5 py-2.5 pr-10
             text-sm font-sans text-zinc-900 dark:text-text-dark-primary
             bg-white dark:bg-surface-dark-elevated
-            border rounded-lg
+            border rounded-lg max-md:min-h-[44px]
             appearance-none cursor-pointer
             ${
               error

@@ -53,7 +53,7 @@ const Input = forwardRef(function Input(
             ${icon ? 'pl-10' : ''}
             text-sm font-sans text-zinc-900 dark:text-text-dark-primary
             bg-white dark:bg-surface-dark-elevated
-            border rounded-lg
+            border rounded-lg max-md:min-h-[44px]
             ${
               error
                 ? 'border-brand-red focus:ring-brand-red/20 focus:border-brand-red'

@@ -76,7 +76,7 @@ export default function Modal({
   return (
     <div
       ref={overlayRef}
-      className="backdrop-overlay flex items-center justify-center p-4"
+      className="backdrop-overlay flex items-center justify-center p-4 max-md:items-end max-md:p-0 max-md:pb-0"
       onClick={handleBackdropClick}
       role="dialog"
       aria-modal="true"
@@ -87,9 +87,15 @@ export default function Modal({
         className={`
           w-full ${sizes[size]}
           bg-white dark:bg-surface-dark-card
-          rounded-2xl shadow-modal
-          animate-fade-in-scale
-          max-h-[90vh] overflow-y-auto
+          shadow-modal
+          overflow-y-auto
+          
+          /* Desktop */
+          md:rounded-2xl md:max-h-[90vh] md:animate-fade-in-scale
+          
+          /* Mobile Drawer */
+          max-md:rounded-t-2xl max-md:rounded-b-none max-md:max-h-[95vh] max-md:animate-slide-up
+          
           ${className}
         `}
       >

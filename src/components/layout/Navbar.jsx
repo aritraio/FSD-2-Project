@@ -113,7 +113,7 @@ export default function Navbar({ onSearchClick }) {
           </div>
 
           {/* ── Center: Navigation Links ── */}
-          <div className="hidden lg:flex items-center gap-1">
+          <div className="hidden md:flex items-center gap-1">
             {NAV_ITEMS.map(({ to, label, icon: Icon }) => (
               <NavLink
                 key={to}

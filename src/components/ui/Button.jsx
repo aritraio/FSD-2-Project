@@ -23,7 +23,7 @@ export default function Button({
 }) {
   const base = [
     'inline-flex items-center justify-center gap-2',
-    'font-sans font-medium rounded-lg',
+    'font-sans font-medium rounded-lg max-md:min-h-[44px]',
     'transition-all duration-200 ease-out-expo',
     'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-amber',
     'disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none',

@@ -484,25 +484,25 @@
 
 ### Mobile (< 768px)
 
-- [ ] Navbar collapses to hamburger or bottom nav
-- [ ] Dashboard metrics stack vertically (2-column or single)
-- [ ] Charts resize and remain readable
-- [ ] Transaction table → stacked cards
-- [ ] Modals become full-screen drawers
-- [ ] No horizontal overflow anywhere
-- [ ] Touch-friendly tap targets (min 44px)
+- [x] Navbar collapses to hamburger or bottom nav
+- [x] Dashboard metrics stack vertically (2-column or single)
+- [x] Charts resize and remain readable
+- [x] Transaction table → stacked cards
+- [x] Modals become full-screen drawers
+- [x] No horizontal overflow anywhere
+- [x] Touch-friendly tap targets (min 44px)
 
 ### Tablet (768–1024px)
 
-- [ ] 2-column grid for dashboard sections
-- [ ] Compressed spacing
-- [ ] Navigation remains top bar (possibly condensed)
+- [x] 2-column grid for dashboard sections
+- [x] Compressed spacing
+- [x] Navigation remains top bar (possibly condensed)
 
 ### Desktop (> 1024px)
 
-- [ ] Full spacious layout
-- [ ] Side-by-side charts
-- [ ] 12-column grid alignment
+- [x] Full spacious layout
+- [x] Side-by-side charts
+- [x] 12-column grid alignment
 
 ---
 
