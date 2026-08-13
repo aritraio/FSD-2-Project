@@ -471,12 +471,12 @@
 
 ## Phase 12 — Global Search
 
-- [ ] Search icon in navbar opens search overlay/modal
-- [ ] Instant search across transactions: merchant, category, account, notes
-- [ ] Display matching results as a dropdown list
-- [ ] Click result → navigate to transaction detail or transactions page filtered
-- [ ] Keyboard shortcut: `Cmd+K` / `Ctrl+K` (optional)
-- [ ] Empty state: "No results found"
+- [x] Search icon in navbar opens search overlay/modal
+- [x] Instant search across transactions: merchant, category, account, notes
+- [x] Display matching results as a dropdown list
+- [x] Click result → navigate to transaction detail or transactions page filtered
+- [x] Keyboard shortcut: `Cmd+K` / `Ctrl+K` (optional)
+- [x] Empty state: "No results found"
 
 ---
 
