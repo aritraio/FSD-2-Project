@@ -258,40 +258,40 @@
 
 ### 5.1 Transactions Header
 
-- [ ] Page heading: `TRANSACTIONS`
-- [ ] Subtext: `₹38,240 spent this month` (calculated)
-- [ ] `+ ADD TRANSACTION` button
+- [x] Page heading: `TRANSACTIONS`
+- [x] Subtext: `₹38,240 spent this month` (calculated)
+- [x] `+ ADD TRANSACTION` button
 
 ### 5.2 Transaction Filters (`TransactionFilters.jsx`)
 
-- [ ] Search input (instant filtering by merchant, category, account, notes)
-- [ ] Date range picker (or month selector)
-- [ ] Category dropdown filter
-- [ ] Account dropdown filter
-- [ ] Type filter: All / Income / Expense / Transfer
-- [ ] Sort: Date (newest/oldest), Amount (high/low)
-- [ ] Clear filters button
+- [x] Search input (instant filtering by merchant, category, account, notes)
+- [x] Date range picker (or month selector)
+- [x] Category dropdown filter
+- [x] Account dropdown filter
+- [x] Type filter: All / Income / Expense / Transfer
+- [x] Sort: Date (newest/oldest), Amount (high/low)
+- [x] Clear filters button
 
 ### 5.3 Transaction Table (`TransactionTable.jsx`)
 
-- [ ] Columns: Date, Description, Category, Account, Amount
-- [ ] Sortable column headers
-- [ ] Hover states on rows
-- [ ] Click row → edit transaction
-- [ ] Delete button per row (with confirmation)
-- [ ] Pagination (or infinite scroll)
-- [ ] Responsive: on mobile, rows become stacked cards
+- [x] Columns: Date, Description, Category, Account, Amount
+- [x] Sortable column headers
+- [x] Hover states on rows
+- [x] Click row → edit transaction
+- [x] Delete button per row (with confirmation)
+- [x] Pagination (or infinite scroll)
+- [x] Responsive: on mobile, rows become stacked cards
 
 ### 5.4 Transaction Row (`TransactionRow.jsx`)
 
-- [ ] Category badge/dot
-- [ ] Formatted date
-- [ ] Formatted amount with +/− and color
-- [ ] Truncated notes preview
+- [x] Category badge/dot
+- [x] Formatted date
+- [x] Formatted amount with +/− and color
+- [x] Truncated notes preview
 
 ### 5.5 Add/Edit Transaction Modal (`TransactionModal.jsx`)
 
-- [ ] Fields:
+- [x] Fields:
   - Type toggle: Expense / Income / Transfer
   - Amount (required)
   - Description (required)
@@ -299,17 +299,17 @@
   - Account (required, dropdown)
   - Date (required, date picker)
   - Notes (optional, textarea)
-- [ ] Validation with error messages
-- [ ] On save:
+- [x] Validation with error messages
+- [x] On save:
   - Persist to localStorage
   - Update account balance
   - Recalculate dashboard metrics
-- [ ] On edit: pre-fill form, update in place
-- [ ] Accessible: focus trap, close on Escape
+- [x] On edit: pre-fill form, update in place
+- [x] Accessible: focus trap, close on Escape
 
 ### 5.6 Empty State
 
-- [ ] Illustration/icon + message + `ADD TRANSACTION` CTA
+- [x] Illustration/icon + message + `ADD TRANSACTION` CTA
 
 ---
 
