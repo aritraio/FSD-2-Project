@@ -536,18 +536,18 @@
 
 ## Phase 16 — Final QA & Cleanup
 
-- [ ] Verify all routes render meaningful content
-- [ ] Verify all buttons/CTAs are functional (no dead buttons)
-- [ ] Verify all CRUD operations: add, edit, delete transactions/accounts/budgets/holdings
-- [ ] Verify calculations update dynamically on data change
-- [ ] Verify localStorage persistence survives page reload
-- [ ] Verify export/import/clear-data flows
-- [ ] Verify dark mode across all pages
-- [ ] Verify responsive layout at 375px, 768px, 1024px, 1440px
-- [ ] Remove all `console.log` and TODO comments
-- [ ] Clean up unused imports and dead code
-- [ ] Run `npm run build` — confirm no errors
-- [ ] Final visual review: does it feel like a premium fintech product?
+- [x] Verify all routes render meaningful content
+- [x] Verify all buttons/CTAs are functional (no dead buttons)
+- [x] Verify all CRUD operations: add, edit, delete transactions/accounts/budgets/holdings
+- [x] Verify calculations update dynamically on data change
+- [x] Verify localStorage persistence survives page reload
+- [x] Verify export/import/clear-data flows
+- [x] Verify dark mode across all pages
+- [x] Verify responsive layout at 375px, 768px, 1024px, 1440px
+- [x] Remove all `console.log` and TODO comments
+- [x] Clean up unused imports and dead code
+- [x] Run `npm run build` — confirm no errors
+- [x] Final visual review: does it feel like a premium fintech product?
 
 ---
 
